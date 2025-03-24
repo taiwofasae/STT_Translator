@@ -51,7 +51,7 @@ def main():
     st.title("Audio Transcription and Translation")
 
     audio_file = st.file_uploader("Upload Audio File (Size Limit 25MB)", type=["mp3"])
-    target_language = st.selectbox("Select Language for Translation", ["繁體中文"])
+    target_language = st.selectbox("Select Language for Translation", ["繁體中文","Spanish"])
 
     if st.button("Transcribe and Translate"):
         with st.spinner('Processing...'):
